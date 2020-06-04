@@ -1,0 +1,62 @@
+header {
+  background-color: #684889;
+}
+
+body {
+  background-color: #353770;
+  color: white;
+  font-family: verdana;
+}
+
+input {
+  background-color: #be4583;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 0.8em;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.694);
+}
+
+button {
+  background-color: #be4583;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0.8em;
+}
+
+button:hover {
+  background-color: #fe2360;
+}
+
+#Carousel button {
+  background-color: #fbd346;
+  color: black;
+}
+
+#Carousel button:hover {
+  background-color: #fe9a69;
+}
+
+#ad-1,
+#ad-2,
+#ad-3 {
+  display: none;
+}
+
+input[id="radio-ad-1"]:checked ~ #ad-1 {
+  display: block;
+}
+input[id="radio-ad-2"]:checked ~ #ad-2 {
+  display: block;
+}
+input[id="radio-ad-3"]:checked ~ #ad-3 {
+  display: block;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
