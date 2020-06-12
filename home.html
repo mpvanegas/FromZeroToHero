@@ -7,92 +7,154 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      href="images/empanadas-colombianas.jpg"
-      type="image/icon type"
-    />
+    <link rel="icon" href="images/logo.png" type="image/icon type" />
     <title>My shop</title>
   </head>
   <body>
     <header>
+      <!-- hamburguer -->
+      <button><i class="fa fa-bars"></i></button>
       <!-- search and menu -->
-      <div>
+      <div class="search">
         <!-- search -->
         <button>
           <i class="fa fa-search"></i>
         </button>
         <input placeholder="Search in Sample Shop" />
-        <!-- hamburguer -->
-        <button><i class="fa fa-bars"></i></button>
       </div>
-      <!-- carrusel -->
-      <section id="Carousel">
-        <input type="radio" id="radio-ad-1" name="ads" checked />
-        <input type="radio" id="radio-ad-2" name="ads" />
-        <input type="radio" id="radio-ad-3" name="ads" />
-        <div id="ad-1">
-          <h4>Ad 1 Title</h4>
-          <h6>Description</h6>
-          <button>Get it now!<i class="fa fa-arrow-circle-right"></i></button>
-        </div>
-        <div id="ad-2">
-          <h4>Ad 2 Title</h4>
-          <h6>Description</h6>
-          <button>Show me more<i class="fa fa-arrow-right"></i></button>
-        </div>
-        <div id="ad-3">
-          <h4>Ad 3 Title</h4>
-          <h6>Description</h6>
-          <button>
-            More information<i class="fa fa-chevron-circle-right"></i>
-          </button>
-        </div>
-      </section>
     </header>
     <!-- body -->
+    <!-- carrusel -->
+    <section id="Carousel">
+      <input type="radio" id="radio-ad-1" name="ads" checked />
+      <input type="radio" id="radio-ad-2" name="ads" />
+      <input type="radio" id="radio-ad-3" name="ads" />
+      <div id="ad-1">
+        <h4>Ad 1 Title</h4>
+        <h6>Description</h6>
+        <img src="https://picsum.photos/130/130" alt="Add 1" />
+        <button>Get it now!<i class="fa fa-arrow-circle-right"></i></button>
+      </div>
+      <div id="ad-2">
+        <h4>Ad 2 Title</h4>
+        <h6>Description</h6>
+        <img src="https://picsum.photos/130/130" alt="Add 2" />
+        <button>Show me more<i class="fa fa-arrow-right"></i></button>
+      </div>
+      <div id="ad-3">
+        <h4>Ad 3 Title</h4>
+        <h6>Description</h6>
+        <img src="https://picsum.photos/130/130" alt="Add 3" />
+        <button>
+          More information<i class="fa fa-chevron-circle-right"></i>
+        </button>
+      </div>
+    </section>
     <div>
       <!-- categories section -->
       <section id="Categories">
-        <p>
+        <p class="section-header">
           <label>CATEGORIES</label>
-          <button>SEE ALL</button>
+          <button class="see-all-button">SEE ALL</button>
         </p>
         <!-- CATEGORIES items -->
-        <div>
-          <button>
-            <img src="https://picsum.photos/130/130" alt="Category 1" />
+        <div class="items-container">
+          <button class="categories-item">
+            <!-- <img src="https://picsum.photos/130/130" alt="Category 1" /> -->
           </button>
-          <button>
-            <img src="https://picsum.photos/130/130" alt="Category 2" />
+          <button class="categories-item">
+            <!-- <img src="https://picsum.photos/130/130" alt="Category 2" /> -->
           </button>
-          <button>
-            <img src="https://picsum.photos/130/130" alt="Category 3" />
+          <button class="categories-item">
+            <!-- <img src="https://picsum.photos/130/130" alt="Category 3" /> -->
           </button>
         </div>
       </section>
       <section id="Products">
-        <p>
+        <p class="section-header">
           <label>NEW PRODUCTS</label>
-          <button>SEE ALL</button>
+          <button class="see-all-button">SEE ALL</button>
         </p>
         <!-- NEW PRODUCTS items -->
-        <div>
-          <article>
+        <div class="items-container">
+          <article class="new-products-item">
             <button>
               <img src="https://picsum.photos/130/130" alt="Category 1" />
               <p>Shoes Max</p>
               <p>$130</p>
             </button>
           </article>
-          <article>
+          <article class="new-products-item">
             <button>
               <img src="https://picsum.photos/130/130" alt="Category 1" />
               <p>Shoes Max</p>
               <p>$130</p>
             </button>
           </article>
-          <article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
+            <button>
+              <img src="https://picsum.photos/130/130" alt="Category 1" />
+              <p>Shoes Max</p>
+              <p>$130</p>
+            </button>
+          </article>
+          <article class="new-products-item">
             <button>
               <img src="https://picsum.photos/130/130" alt="Category 1" />
               <p>Shoes Max</p>
@@ -102,5 +164,11 @@
         </div>
       </section>
     </div>
+    <footer>
+      <img src="images/facebook-logo.png" alt="facebook" />
+      <img src="images/twitter-logo.png" alt="twitter" />
+      <img src="images/instagram-logo-2.png" alt="instagram" />
+      <img src="images/whatsapp-logo.png" alt="whatsapp" />
+    </footer>
   </body>
 </html>

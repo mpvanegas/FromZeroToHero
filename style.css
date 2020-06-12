@@ -1,9 +1,31 @@
 header {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  width: -webkit-fill-available;
+  padding: 5px;
+  background-color: #684889;
+}
+
+.search {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: inherit;
+}
+
+footer {
+  position: inherit;
+  bottom: 0px;
+  width: inherit;
   background-color: #684889;
 }
 
 body {
-  background-color: #353770;
+  margin: 0;
+  width: 100%;
+  /* background-color: #353770; */
+  background-color: snow;
   color: white;
   font-family: verdana;
 }
@@ -32,6 +54,15 @@ button:hover {
   background-color: #fe2360;
 }
 
+.section-title {
+  font-size: xx-large;
+}
+
+/* #Carousel {
+  display: flex;
+  justify-content: center;
+} */
+
 #Carousel button {
   background-color: #fbd346;
   color: black;
@@ -49,14 +80,64 @@ button:hover {
 
 input[id="radio-ad-1"]:checked ~ #ad-1 {
   display: block;
+  /* background-color: #bb1229; */
+  background-color: #353770;
+  margin: 20px;
+  /* background-image: url("https://picsum.photos/130/130"); */
 }
 input[id="radio-ad-2"]:checked ~ #ad-2 {
   display: block;
+  background-color: #991e86;
+  margin: 20px;
+  /* background-image: url("https://picsum.photos/130/130"); */
 }
 input[id="radio-ad-3"]:checked ~ #ad-3 {
   display: block;
+  background-color: #f19ac4;
+  margin: 20px;
+  /* background-image: url("https://picsum.photos/130/130"); */
 }
 
 input[type="radio"]:checked + label {
   font-weight: bold;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: xx-large;
+  padding: 40px;
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#Products .items-container {
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+#Categories,
+#Products {
+  margin: 0 20px 0 20px;
+  background-color: #353770;
+  border-radius: 10px 10px 0 0;
+}
+
+.categories-item {
+  background-image: url("https://picsum.photos/130/130");
+  width: 33%;
+  padding: 16.5% 0 16.5% 0;
+  margin: 10px;
+}
+
+.new-products-item {
+  justify-content: center;
+  margin: 10px 50px;
+  /* width: 33%; */
+  /* padding: 16.5% 0 16.5% 0;
+  align-items: center;
+  margin: 10px; */
 }
