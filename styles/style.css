@@ -77,25 +77,36 @@ button:hover {
 #ad-3 {
   display: none;
   border-radius: 10px;
+  height: 300px;
+  padding: 10px;
 }
 
 input[id="radio-ad-1"]:checked ~ #ad-1 {
   display: block;
   background-color: #353770;
   margin: 20px;
-  background-image: url("https://picsum.photos/130/130");
+  background-image: url("../images/ocean.png");
 }
 input[id="radio-ad-2"]:checked ~ #ad-2 {
   display: block;
   background-color: #991e86;
   margin: 20px;
-  /* background-image: url("https://picsum.photos/130/130"); */
+  background-image: url("../images/sand.png");
+  color: black;
 }
 input[id="radio-ad-3"]:checked ~ #ad-3 {
   display: block;
-  background-color: #f19ac4;
+  background-color: lightblue;
   margin: 20px;
-  /* background-image: url("https://picsum.photos/130/130"); */
+  background-image: url("../images/snow.png");
+  color: black;
+  overflow: hidden;
+}
+
+#ad-3 div {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
 }
 
 input[type="radio"]:checked + label {
@@ -128,17 +139,33 @@ input[type="radio"]:checked + label {
 
 .categories-item {
   width: 33%;
-  padding: 16.5% 0 16.5% 0;
   margin: 10px;
-  background-image: url("https://picsum.photos/130/130");
-  background-size: 100% 100%;
+}
+
+.categories-item > img {
+  width: 100%;
 }
 
 .new-products-item {
   justify-content: center;
   margin: 10px 50px;
+  height: 100%;
   /* width: 33%; */
   /* padding: 16.5% 0 16.5% 0;
   align-items: center;
   margin: 10px; */
+}
+
+.new-products-item > button {
+  height: 250px;
+  width: 170px;
+}
+
+.new-products-item div {
+  width: 100%;
+  height: 75%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
