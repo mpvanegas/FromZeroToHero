@@ -76,14 +76,14 @@ button:hover {
 #ad-2,
 #ad-3 {
   display: none;
+  border-radius: 10px;
 }
 
 input[id="radio-ad-1"]:checked ~ #ad-1 {
   display: block;
-  /* background-color: #bb1229; */
   background-color: #353770;
   margin: 20px;
-  /* background-image: url("https://picsum.photos/130/130"); */
+  background-image: url("https://picsum.photos/130/130");
 }
 input[id="radio-ad-2"]:checked ~ #ad-2 {
   display: block;
@@ -127,10 +127,11 @@ input[type="radio"]:checked + label {
 }
 
 .categories-item {
-  background-image: url("https://picsum.photos/130/130");
   width: 33%;
   padding: 16.5% 0 16.5% 0;
   margin: 10px;
+  background-image: url("https://picsum.photos/130/130");
+  background-size: 100% 100%;
 }
 
 .new-products-item {
